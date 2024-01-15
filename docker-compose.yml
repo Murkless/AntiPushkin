@@ -3,7 +3,7 @@ version: "3.9"
 services:
   telegram-bot:
     container_name: telegram-bot
-    working_dir: /telegram_bot
+    working_dir: $APP_HOME
     restart: always
     environment:
       - DOWNLOAD_PATH="${DOWNLOAD_PATH}"
