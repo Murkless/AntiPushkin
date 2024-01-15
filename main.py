@@ -7,8 +7,8 @@ import easyocr
 from PIL import Image
 
 load_dotenv()
-download_path = os.environ.get('DOWNLOAD_PATH')
-bot_token = os.environ.get('TOKEN')
+download_path = os.environ.get('./')
+bot_token = os.environ.get('6983472152:AAE-8DwX1z5yFtpRAhxW6CQoT0uJJLpNFWM')
 reader = easyocr.Reader(['ru'])
 bot = Bot(token=bot_token)
 dp = Dispatcher(bot)
