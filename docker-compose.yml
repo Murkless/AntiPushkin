@@ -3,11 +3,8 @@ version: "3.9"
 services:
   telegram-bot:
     container_name: telegram-bot
-    working_dir: $APP_HOME
+    working_dir: /app
     restart: always
-    environment:
-      - DOWNLOAD_PATH="${DOWNLOAD_PATH}"
-      - TOKEN="${TOKEN}"
     build:
         context: .
         dockerfile: Dockerfile
